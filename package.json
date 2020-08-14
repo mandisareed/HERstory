@@ -29,10 +29,13 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "bcrypt": "^5.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.16.4",
     "express-jwt": "^5.3.3",
+    "fontsource-roboto": "^3.0.3",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.13",
