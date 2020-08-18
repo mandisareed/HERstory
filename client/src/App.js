@@ -15,7 +15,9 @@ function App() {
     <AuthProvider>
       <Router>
         <div>
+        <ProtectedRoute exact path="/profile">
           <Navbar />
+          </ProtectedRoute>
           <Switch>
             <ProtectedRoute exact path="/">
               <Home />
