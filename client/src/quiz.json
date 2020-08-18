@@ -1,4 +1,4 @@
-[{
+{"quiz": [{
     "Question": "Sarah Breedlove became the first self-made female millionaire from selling what kind of products?",
     "A": "Hair",
     "B": "Baking/Cooking",
@@ -29,4 +29,5 @@
     "C": "Frida Kahlo"
 }
 ]
+}
 
