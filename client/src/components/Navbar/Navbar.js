@@ -38,7 +38,7 @@ function Navbar() {
 function BrandLink(props) {
   return (
     <NavLink className="nav-item brand" exact {...props}>
-      React JWT
+      HERstory
     </NavLink>
   );
 }
