@@ -10,6 +10,8 @@ import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Factbook from "./pages/Factbook";
+import Quiz from "./pages/Quiz/Quiz";
+
 function App() {
 
   return (
@@ -17,7 +19,7 @@ function App() {
     <AuthProvider>
    
       <Router>
-        <div>
+        
         <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
           
           <ProtectedRoute  to={["/profile","/factbook"]} >
@@ -41,9 +43,12 @@ function App() {
             </ProtectedRoute>
             <ProtectedRoute exact path="/factbook">
               <Factbook/>
+              </ProtectedRoute>
+            <ProtectedRoute exact path="/quiz">
+              <Quiz />
             </ProtectedRoute>
           </Switch>
-        </div>
+       
       </Router>
     </AuthProvider>
   );
