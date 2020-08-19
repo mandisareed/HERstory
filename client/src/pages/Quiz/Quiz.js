@@ -7,10 +7,7 @@ import QuizCard from "../../components/Quiz";
 function Quiz() {
     return (
         <body className="quiz-background">
-            
-
-            {/* navbar */}
-            <Navbar />
+     
             {/* Quiz title */}
             <p className="quiz-title"> Quiz</p>
 
