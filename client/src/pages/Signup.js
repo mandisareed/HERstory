@@ -53,24 +53,27 @@ function Signup() {
       <h1 style={{fontFamily : "Courier New, monospace"}}>Signup</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="username"
-          labelText="Username"
+          //labelText="Username"
           placeholder="username"
           name="username"
           type="text"
           onChange={handleChange}
         />
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="email"
-          labelText="Email"
+          //labelText="Email"
           placeholder="Email"
           name="email"
           type="email"
           onChange={handleChange}
         />
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="pwd"
-          labelText="Password"
+          //labelText="Password"
           placeholder="Password"
           name="password"
           type="password"

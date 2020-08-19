@@ -5,3 +5,7 @@
   .signupHeader {
     background-color:#BB6B1E;
   }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:white;
+    text-align: center;
+  }
