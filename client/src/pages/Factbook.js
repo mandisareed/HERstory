@@ -17,8 +17,12 @@ function Factbook() {
   return (
     <div style={loginStyle}>
       <h1 id="text">Factbook</h1>
+      <div class="row">
        <FactCard/>
-    
+       <FactCard/>
+       <FactCard/>
+       </div>
+      
     </div>
   );
 }

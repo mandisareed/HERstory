@@ -20,7 +20,7 @@ function App() {
         <div>
         <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
           
-          <ProtectedRoute  to="/profile" to="/factbook" >
+          <ProtectedRoute  to={["/profile","/factbook"]} >
             
           <Navbar />
           </ProtectedRoute>

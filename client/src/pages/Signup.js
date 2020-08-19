@@ -48,7 +48,7 @@ function Signup() {
 
   return (
     <div style={signupStyles} className="Signup">
-       <h1 style={{textAlign : "center", fontFamily : "Courier New, monospace", fontWeight: "800"}}> HERstory</h1>
+       
       <h3 style={{fontFamily : "Courier New, monospace"}}>Signup</h3>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup

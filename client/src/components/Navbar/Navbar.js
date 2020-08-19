@@ -27,6 +27,13 @@ function Navbar() {
         Factbook
       </NavLink>
     );
+    links.push(
+      <NavLink key="quizpage" className="nav-item" to="/factbook">
+        Quiz
+      </NavLink>
+
+    );
+    
   } else {
     links.push(
       <NavLink key="signup" className="nav-item" to="/signup">
