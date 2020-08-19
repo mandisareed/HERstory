@@ -1,14 +1,12 @@
+<<<<<<< HEAD
+.quiz-background {
+    background-color: black;
+}
+=======
 /* html {
     background-color:black;
 } */
-
-.app-title {
-    color: white;
-    text-align: center; 
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    font-size: 3em;
-}
+>>>>>>> b46fd21923d768f16ec5700008b778aa3438fb43
 
 .quiz-title {
     color: white;

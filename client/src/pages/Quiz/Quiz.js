@@ -6,9 +6,8 @@ import QuizCard from "../../components/Quiz";
 
 function Quiz() {
     return (
-        <div className="background">
-            {/* app title */}
-            <p className="app-title"> HERstory</p>
+        <body className="quiz-background">
+            
 
             {/* navbar */}
             <Navbar />
@@ -19,7 +18,7 @@ function Quiz() {
             - make a separate component? */}
             <QuizCard />
             {/* need to add: instructions with begin button and results */}
-        </div>
+        </body>
     )
 };
 
