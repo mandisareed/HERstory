@@ -19,6 +19,13 @@ function Navbar() {
       <span key="lougout" className="nav-item" onClick={logout}>
         Logout
       </span>
+      
+
+    );
+    links.push(
+      <NavLink key="factbook" className="nav-item" to="/factbook">
+        Factbook
+      </NavLink>
     );
   } else {
     links.push(
@@ -38,7 +45,7 @@ function Navbar() {
 function BrandLink(props) {
   return (
     <NavLink className="nav-item brand" exact {...props}>
-      React JWT
+      HerStory
     </NavLink>
   );
 }
