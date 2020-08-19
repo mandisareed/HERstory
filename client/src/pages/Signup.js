@@ -49,7 +49,8 @@ function Signup() {
   return (
     <body className= "loginBackground">
     <div style={signupStyles} className="Signup">
-      <h1>Signup</h1>
+       
+      <h3 style={{fontFamily : "Courier New, monospace"}}>Signup</h3>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup
           id="username"
