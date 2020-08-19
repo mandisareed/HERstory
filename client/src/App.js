@@ -9,6 +9,7 @@ import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Quiz from "./pages/Quiz/Quiz";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <ProtectedRoute exact path="/profile">
               <Profile />
+            </ProtectedRoute>
+            <ProtectedRoute exact path="/quiz">
+              <Quiz />
             </ProtectedRoute>
           </Switch>
         </div>
