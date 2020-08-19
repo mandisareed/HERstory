@@ -1,0 +1,19 @@
+html {
+    background-color: black;
+}
+
+.app-title {
+    color: white;
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.quiz-title {
+    color: white;
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 2em;
+}
