@@ -17,7 +17,7 @@ function App() {
       <Router>
         <div>
         <ProtectedRoute exact path="/profile">
-        <h1 style={{textAlign : "center", fontFamily : "Courier New, monospace", fontWeight: "800"}}> HERstory</h1>
+        <h1 className = "title" style={{textAlign : "center", fontFamily : "Courier New, monospace", fontWeight: "800", margin: "0 auto", padding: "50px 0"}}> HERstory</h1>
           <Navbar />
           </ProtectedRoute>
           <Switch>

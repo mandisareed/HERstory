@@ -3,7 +3,7 @@ import { Link, Redirect, useHistory } from "react-router-dom";
 import API from "./../utils/API";
 import { useAuth } from "../utils/auth";
 import { Form, InputGroup } from "../components/LoginForm";
-
+import "./Signup.css";
 const signupStyles = {
   maxWidth: "20rem",
   margin: "0 auto",
@@ -47,6 +47,7 @@ function Signup() {
   };
 
   return (
+    <body className= "loginBackground">
     <div style={signupStyles} className="Signup">
       <h1>Signup</h1>
       <Form onSubmit={handleFormSubmit}>
@@ -86,6 +87,7 @@ function Signup() {
         Go to Login
       </Link>
     </div>
+    </body>
   );
 }
 
