@@ -47,10 +47,10 @@ function Signup() {
   };
 
   return (
-    <body className= "loginBackground">
+    <body className= "signupBackground">
     <div style={signupStyles} className="Signup">
-       
-      <h3 style={{fontFamily : "Courier New, monospace"}}>Signup</h3>
+    <h1 className= "signupHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
+      <h1 style={{fontFamily : "Courier New, monospace"}}>Signup</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup
           id="username"
@@ -87,6 +87,7 @@ function Signup() {
       >
         Go to Login
       </Link>
+      <br></br>
     </div>
     </body>
   );

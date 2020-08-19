@@ -17,7 +17,9 @@ function Profile() {
   }, [user]);
 
   return (
+    
     <body className= "profileBackground">
+      
     <Container>
       <h1>On the profile page!</h1>
       <p>Username: {username}</p>

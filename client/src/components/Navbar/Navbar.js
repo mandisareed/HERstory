@@ -15,13 +15,13 @@ function Navbar() {
         Profile
       </NavLink>
     );
-    links.push(
-      <span key="lougout" className="nav-item" onClick={logout}>
-        Logout
-      </span>
+    // links.push(
+    //   <span key="lougout" className="nav-item" onClick={logout}>
+    //     Logout
+    //   </span>
       
 
-    );
+    //);
     links.push(
       <NavLink key="factbook" className="nav-item" to="/factbook">
         Factbook
@@ -32,6 +32,11 @@ function Navbar() {
         Quiz
       </NavLink>
 
+    );
+    links.push(
+      <span key="lougout" className="nav-item" onClick={logout}>
+        Logout
+      </span>
     );
     
   } else {

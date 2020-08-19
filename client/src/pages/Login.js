@@ -35,9 +35,10 @@ function Login() {
   return (
     <body className= "loginBackground">
     <div style={loginStyle}>
+    <h1 className= "loginHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
       <h1>Login</h1>
       <Form onSubmit={handleFormSubmit}>
-        <InputGroup
+        <InputGroup 
           id="email"
           labelText="Email"
           name="email"
