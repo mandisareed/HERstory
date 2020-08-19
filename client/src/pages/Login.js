@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
 import { useAuth } from "../utils/auth";
 import { Form, InputGroup } from "../components/LoginForm";
-
+import "./Login.css";
 const loginStyle = {
   display: "flex",
   justifyContent: "center",
@@ -33,6 +33,7 @@ function Login() {
   };
 
   return (
+    <body className= "loginBackground">
     <div style={loginStyle}>
       <h1>Login</h1>
       <Form onSubmit={handleFormSubmit}>
@@ -64,7 +65,9 @@ function Login() {
         Go to Signup
       </Link>
     </div>
+    </body>
   );
+  
 }
 
 export default Login;
