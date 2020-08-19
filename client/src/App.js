@@ -9,15 +9,21 @@ import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
+import Factbook from "./pages/Factbook";
 import Quiz from "./pages/Quiz/Quiz";
 
 function App() {
+
   return (
+    
     <AuthProvider>
+   
       <Router>
-        <div>
-        <ProtectedRoute exact path="/profile">
-        <h1 style={{textAlign : "center", fontFamily : "Courier New, monospace", fontWeight: "800"}}> HERstory</h1>
+        
+        <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
+          
+          <ProtectedRoute  to={["/profile","/factbook"]} >
+            
           <Navbar />
           </ProtectedRoute>
           <Switch>
@@ -25,19 +31,24 @@ function App() {
               <Home />
             </ProtectedRoute>
             <Route exact path="/login">
+            
               <Login />
             </Route>
             <Route exact path="/signup">
+            
               <Signup />
             </Route>
             <ProtectedRoute exact path="/profile">
               <Profile />
             </ProtectedRoute>
+            <ProtectedRoute exact path="/factbook">
+              <Factbook/>
+              </ProtectedRoute>
             <ProtectedRoute exact path="/quiz">
               <Quiz />
             </ProtectedRoute>
           </Switch>
-        </div>
+       
       </Router>
     </AuthProvider>
   );

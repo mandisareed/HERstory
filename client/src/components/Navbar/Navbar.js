@@ -19,7 +19,21 @@ function Navbar() {
       <span key="lougout" className="nav-item" onClick={logout}>
         Logout
       </span>
+      
+
     );
+    links.push(
+      <NavLink key="factbook" className="nav-item" to="/factbook">
+        Factbook
+      </NavLink>
+    );
+    links.push(
+      <NavLink key="quizpage" className="nav-item" to="/factbook">
+        Quiz
+      </NavLink>
+
+    );
+    
   } else {
     links.push(
       <NavLink key="signup" className="nav-item" to="/signup">
