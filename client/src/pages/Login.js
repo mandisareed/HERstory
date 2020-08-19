@@ -39,16 +39,20 @@ function Login() {
       <h1>Login</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup 
+        style={{backgroundColor: "#293713"}} 
           id="email"
-          labelText="Email"
+          placeholder="Email"
+          // labelText="Email"
           name="email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="password"
-          labelText="Password"
+          placeholder="Password"
+          // labelText="Password"
           name="password"
           type="password"
           value={password}
