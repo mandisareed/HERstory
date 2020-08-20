@@ -12,21 +12,18 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-<<<<<<< HEAD
     minWidth:345,
     margin:"20px",
   marginLeft:"65px",
   
     
-=======
->>>>>>> 6efd0b911313df7b69e7efab48c552714a6f1c7f
   },
   media: {
     height: 400,
   },
 });
 
-export default function FactCard() {
+export default function FactCard(props) {
   const classes = useStyles();
 
   return ( 
@@ -40,7 +37,6 @@ export default function FactCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-<<<<<<< HEAD
             {props.className}
             {props.name}
           </Typography> 
@@ -54,13 +50,6 @@ export default function FactCard() {
           </Typography> 
           <Typography variant="body2" color="textSecondary" component="p">
             {props.about}
-=======
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
->>>>>>> 6efd0b911313df7b69e7efab48c552714a6f1c7f
           </Typography>
         </CardContent>
       </CardActionArea>
