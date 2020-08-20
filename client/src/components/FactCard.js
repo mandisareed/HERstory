@@ -14,8 +14,8 @@ const useStyles = makeStyles({
     maxWidth: 345,
     minWidth:345,
     margin:"20px",
-  marginLeft:"65px"
- 
+  marginLeft:"65px",
+  
     
   },
   media: {
