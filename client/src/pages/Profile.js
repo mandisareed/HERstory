@@ -28,7 +28,7 @@ function Profile() {
     
     <body className= "profileBackground">
       
-    <Container>
+      <Container>
       <h1>My Profile</h1>
       <p>Username: {username}</p>
       <p>Email: {email}</p>
