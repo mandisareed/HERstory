@@ -28,26 +28,26 @@ const useStyles = makeStyles({
 });
 
 function QuizCard() {
-  const classes = useStyles();
+  const quizStyles = useStyles();
   // const bull = <span className={classes.bullet}>•</span>;
 
   return (
       <div><QuizInstructions />
   
 
-    <Card className={classes.root} variant="outlined">
+    <Card className={quizStyles.root} variant="outlined">
       <CardContent>
-        <Typography className={classes.question} variant="h5">
+        <Typography className={quizStyles.question} variant="h5">
           Sarah Breedlove became the first self-made female millionaire from
           selling what kind of products?
         </Typography>
-        <p className={classes.answers}>
+        <p className={quizStyles.answers}>
           A) Hair
         </p>
-        <p className={classes.answers}>
+        <p className={quizStyles.answers}>
           B) Cooking/Baking
         </p>
-        <p className={classes.answers}>
+        <p className={quizStyles.answers}>
           C) Woodworking
         </p>
       </CardContent>
