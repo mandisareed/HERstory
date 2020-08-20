@@ -36,21 +36,21 @@ function QuizCard(props) {
     <Card className={quizStyles.root} variant="outlined">
       <CardContent>
         <Typography className={quizStyles.question} variant="h5">
-          Sarah Breedlove became the first self-made female millionaire from
-          selling what kind of products?
-          {/* {props.question} */}
+          {/* Sarah Breedlove became the first self-made female millionaire from
+          selling what kind of products? */}
+          {props.question}
         </Typography>
         <p className={quizStyles.answers}>
-          A) Hair
-          {/* {props.a} */}
+          {/* A) Hair */}
+          {props.answerA}
         </p>
         <p className={quizStyles.answers}>
-          B) Cooking/Baking
-          {/* {props.b} */}
+          {/* B) Cooking/Baking */}
+          {props.answerB}
         </p>
         <p className={quizStyles.answers}>
-          C) Woodworking
-          {/* {props.c} */}
+          {/* C) Woodworking */}
+          {props.answerC}
         </p>
       </CardContent>
     </Card>

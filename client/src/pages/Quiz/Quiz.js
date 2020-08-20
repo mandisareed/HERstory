@@ -1,38 +1,47 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import "./Quiz.css";
 import QuizCard from "../../components/Quiz";
 import QuizInstructions from "../../components/Quiz/instructions";
 import QuizResults from "../../components/Quiz/results";
-import quiz from "../../quiz.json";
+// import quiz from "../../quiz.json";
+import axios from "axios";
 
 function Quiz() {
-    
-        return (
-        <body className="quiz-background">
-     
-            {/* Quiz page title */}
-            <p className="quiz-title"> Quiz</p>
+    const [quiz, setQuizCard] = useState([]);
 
-            {/* Quiz Instructions card */}
-            <QuizInstructions />
-            
-            
+    useEffect(() => {
+        // ajax on component load the first time
+        axios.get("https://my-json-server.typicode.com/mandisareed/quizjson/quiz").then((res) => {
+          console.log(res.data)
+          setQuizCard(res.data)
+        });
+      }, []);
 
-            {/* Quiz card(s) with questions and answers */}
-            {/* {this.state.quiz.map(quiz => ( */}
-            <QuizCard
-            // question={quiz.question}
-            //  answerA={quiz.a}
-            //  answerB={quiz.b}
-            //  answerC={quiz.c}
-             />
-             {/* ))} */}
 
-            {/* Quiz Results Card */}
-            <QuizResults />
-        </body>
-    );
+  return (
+    <div>
+      <body className="quiz-background">
+        {/* Quiz page title */}
+        <p className="quiz-title"> Quiz</p>
+
+        {/* Quiz Instructions card */}
+        <QuizInstructions />
+
+        {/* Quiz card(s) with questions and answers */}
+        {quiz.map(qc => (
+        <QuizCard
+        question={qc.question}
+         answerA={qc.a}
+         answerB={qc.b}
+         answerC={qc.c}
+        />
+          ))}
+
+        {/* Quiz Results Card */}
+        <QuizResults />
+      </body>
+    </div>
+  );
 }
-   
 
 export default Quiz;
