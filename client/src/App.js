@@ -20,7 +20,7 @@ function App() {
    
       <Router>
         
-        <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
+        <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px" ,color:"white"}}> HERstory</h1>
           
           <ProtectedRoute  to={["/profile","/factbook"]} >
             

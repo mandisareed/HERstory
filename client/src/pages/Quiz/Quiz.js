@@ -8,10 +8,10 @@ function Quiz() {
     return (
         <div className="background">
             {/* app title */}
-            <p className="app-title"> HERstory</p>
+         
 
             {/* navbar */}
-            <Navbar />
+            
             {/* Quiz title */}
             <p className="quiz-title"> Quiz</p>
 

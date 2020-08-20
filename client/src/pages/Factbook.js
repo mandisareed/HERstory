@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
 
 import './Factbook.css'; 
-import FactCard from "../components/FactCard";
+import CSSGrid from "../components/Grid";
 
 const loginStyle = {
   display: "flex",
@@ -15,15 +15,15 @@ const loginStyle = {
 function Factbook() {
   
   return (
-    <div style={loginStyle}>
+   <>
       <h1 id="text">Factbook</h1>
-      <div class="row">
-       <FactCard/>
-       <FactCard/>
-       <FactCard/>
-       </div>
-      
-    </div>
+     
+       <CSSGrid/>
+       <CSSGrid/> 
+       
+       
+      </>
+  
   );
 }
 
