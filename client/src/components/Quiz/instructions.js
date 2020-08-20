@@ -43,23 +43,23 @@ const useStyles = makeStyles({
   }
 });
 function QuizInstructions() {
-  const classes = useStyles();
+  const instructStyles = useStyles();
 
   return (
     <div>
-      <Card className={classes.root} variant="outlined">
+      <Card className={instructStyles.root} variant="outlined">
         <CardContent>
-          <Typography className={classes.instructionsHeader} variant="h5">
+          <Typography className={instructStyles.instructionsHeader} variant="h5">
             Time to put your knowledge to the test!
           </Typography>
-          <p className={classes.instructions}>
+          <p className={instructStyles.instructions}>
             For each question, choose your answer by directly clicking on an
             answer choice. The next question will then be displayed until you reach the end of the quiz.
             You got this!
           </p>
-          <p className={classes.beginPrompt}>Click the button below to begin!</p>
+          <p className={instructStyles.beginPrompt}>Click the button below to begin!</p>
 
-            <Container className={classes.buttonContainer}> <Button className={classes.button} variant="contained" >Begin!</Button></Container> 
+            <Container className={instructStyles.buttonContainer}> <Button className={instructStyles.button} variant="contained" >Begin!</Button></Container> 
          
           
         </CardContent>

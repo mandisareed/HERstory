@@ -26,21 +26,21 @@ const useStyles = makeStyles({
 });
 
 function QuizResults() {
-  const classes = useStyles();
-  // const bull = <span className={classes.bullet}>•</span>;
+  const resultStyles = useStyles();
+  // const bull = <span className={resultStyles .bullet}>•</span>;
 
   return (
     <div>
-      <Card className={classes.root} variant="outlined">
+      <Card className={resultStyles.root} variant="outlined">
         <CardContent>
-          <Typography className={classes.congrats} variant="h5">
+          <Typography className={resultStyles.congrats} variant="h5">
             And you're done - CONGRATS!
           </Typography>
-          <p className={classes.results}>
+          <p className={resultStyles.results}>
             You answered 4 out of 5 questions correctly.
-            <p className={classes.results}>
+            <p className={resultStyles.results}>
               Add the following to your study list:
-              <p className={classes.results}>
+              <p className={resultStyles.results}>
                 Sacagawea, Marie Van Brittan Brown
               </p>
             </p>
