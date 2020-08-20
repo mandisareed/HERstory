@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
 import { useAuth } from "../utils/auth";
 import { Form, InputGroup } from "../components/LoginForm";
-
+import "./Login.css";
 const loginStyle = {
   display: "flex",
   justifyContent: "center",
@@ -33,20 +33,26 @@ function Login() {
   };
 
   return (
+    <body className= "loginBackground">
     <div style={loginStyle}>
+    <h1 className= "loginHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
       <h1>Login</h1>
       <Form onSubmit={handleFormSubmit}>
-        <InputGroup
+        <InputGroup 
+        style={{backgroundColor: "#293713"}} 
           id="email"
-          labelText="Email"
+          placeholder="Email"
+          // labelText="Email"
           name="email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="password"
-          labelText="Password"
+          placeholder="Password"
+          // labelText="Password"
           name="password"
           type="password"
           value={password}
@@ -64,7 +70,9 @@ function Login() {
         Go to Signup
       </Link>
     </div>
+    </body>
   );
+  
 }
 
 export default Login;

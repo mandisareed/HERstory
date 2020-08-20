@@ -1,17 +1,12 @@
 import React from "react";
 import "./Quiz.css";
-import Navbar from "../../components/Navbar";
 import QuizCard from "../../components/Quiz";
 
 
 function Quiz() {
     return (
-        <div className="background">
-            {/* app title */}
-         
-
-            {/* navbar */}
-            
+        <body className="quiz-background">
+     
             {/* Quiz title */}
             <p className="quiz-title"> Quiz</p>
 
@@ -19,7 +14,7 @@ function Quiz() {
             - make a separate component? */}
             <QuizCard />
             {/* need to add: instructions with begin button and results */}
-        </div>
+        </body>
     )
 };
 

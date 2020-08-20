@@ -3,7 +3,7 @@ import { Link, Redirect, useHistory } from "react-router-dom";
 import API from "./../utils/API";
 import { useAuth } from "../utils/auth";
 import { Form, InputGroup } from "../components/LoginForm";
-
+import "./Signup.css";
 const signupStyles = {
   maxWidth: "20rem",
   margin: "0 auto",
@@ -47,29 +47,33 @@ function Signup() {
   };
 
   return (
+    <body className= "signupBackground">
     <div style={signupStyles} className="Signup">
-       
-      <h3 style={{fontFamily : "Courier New, monospace"}}>Signup</h3>
+    <h1 className= "signupHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
+      <h1 style={{fontFamily : "Courier New, monospace"}}>Signup</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="username"
-          labelText="Username"
+          //labelText="Username"
           placeholder="username"
           name="username"
           type="text"
           onChange={handleChange}
         />
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="email"
-          labelText="Email"
+          //labelText="Email"
           placeholder="Email"
           name="email"
           type="email"
           onChange={handleChange}
         />
         <InputGroup
+        style={{backgroundColor: "#293713"}}
           id="pwd"
-          labelText="Password"
+          //labelText="Password"
           placeholder="Password"
           name="password"
           type="password"
@@ -86,7 +90,9 @@ function Signup() {
       >
         Go to Login
       </Link>
+      <br></br>
     </div>
+    </body>
   );
 }
 
