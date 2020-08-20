@@ -5,8 +5,6 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 // import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import QuizInstructions from "./instructions";
-import QuizResults from "./results";
 
 const useStyles = makeStyles({
   root: {
@@ -27,12 +25,12 @@ const useStyles = makeStyles({
   },
 });
 
-function QuizCard() {
+function QuizCard(props) {
   const quizStyles = useStyles();
   // const bull = <span className={classes.bullet}>•</span>;
 
   return (
-      <div><QuizInstructions />
+      <div>
   
 
     <Card className={quizStyles.root} variant="outlined">
@@ -40,20 +38,24 @@ function QuizCard() {
         <Typography className={quizStyles.question} variant="h5">
           Sarah Breedlove became the first self-made female millionaire from
           selling what kind of products?
+          {/* {props.question} */}
         </Typography>
         <p className={quizStyles.answers}>
           A) Hair
+          {/* {props.a} */}
         </p>
         <p className={quizStyles.answers}>
           B) Cooking/Baking
+          {/* {props.b} */}
         </p>
         <p className={quizStyles.answers}>
           C) Woodworking
+          {/* {props.c} */}
         </p>
       </CardContent>
     </Card>
 
-    <QuizResults />
+    
     </div>
   );
 }

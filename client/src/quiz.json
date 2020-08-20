@@ -1,32 +1,42 @@
 {"quiz": [{
-    "Question": "Sarah Breedlove became the first self-made female millionaire from selling what kind of products?",
-    "A": "Hair",
-    "B": "Baking/Cooking",
-    "C": "Woodworking"
+    "id": 1,
+    "question": "Sarah Breedlove became the first self-made female millionaire from selling what kind of products?",
+    "a": "Hair",
+    "b": "Baking/Cooking",
+    "c": "Woodworking",
+    "rightAnswer": "Hair"
 },
 {
-    "Question": "__________ who was an important figure in the Stonewall Uprising of 1969, co-founded the first organization in the U.S. led by trans women of color.",
-    "A": "Ada Lovelace",
-    "B": "Marsha P. Johnson",
-    "C": "Sarojini Naidu"
+    "id": 2,
+    "question": "__________ who was an important figure in the Stonewall Uprising of 1969, co-founded the first organization in the U.S. led by trans women of color.",
+    "a": "Ada Lovelace",
+    "b": "Marsha P. Johnson",
+    "c": "Sarojini Naidu",
+    "rightAnswer": "Marsha P. Johnson"
 },
 {
-    "Question": "Junko Tabei faced criticism for challenging gender stereotypes when she became the first woman to:",
-    "A": "Kayak across the Bering Strait",
-    "B": "Climb Mt. Everest",
-    "C": "Competitively race cars"
+    "id": 3,
+    "question": "Junko Tabei faced criticism for challenging gender stereotypes when she became the first woman to:",
+    "a": "Kayak across the Bering Strait",
+    "b": "Climb Mt. Everest",
+    "c": "Competitively race cars",
+    "rightAnswer": "Climb Mt. Everest"
 },
 {
-    "Question": "Often nick-named “Angel of the Battlefield”, this Civil War nurse established the American Red Cross.",
-    "A": "Clara Barton",
-    "B": "Wilma Rudolph",
-    "C": "Christine Jorgensen"
+    "id": 4,
+    "question": "Often nick-named “Angel of the Battlefield”, this Civil War nurse established the American Red Cross.",
+    "a": "Clara Barton",
+    "b": "Wilma Rudolph",
+    "c": "Christine Jorgensen",
+    "rightAnswer": "Clara Barton"
 },
 {
-    "Question": "Celebrated for the inclusion and celebration of Mexican and indigenous culture in her bold and vibrant paintings, ________ is often touted as a feminist icon and the mother of the selfie.",
-    "A": "Maya Angelou",
-    "B": "Sarojini Naidu",
-    "C": "Frida Kahlo"
+    "id": 5,
+    "question": "Celebrated for the inclusion and celebration of Mexican and indigenous culture in her bold and vibrant paintings, ________ is often touted as a feminist icon and the mother of the selfie.",
+    "a": "Maya Angelou",
+    "b": "Sarojini Naidu",
+    "c": "Frida Kahlo",
+    "rightAnswer": "Frida Kahlo"
 }
 ]
 }
