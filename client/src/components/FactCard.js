@@ -13,8 +13,9 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     minWidth:345,
-    margin:"20px",
+    
   marginLeft:"65px",
+  
   
     
   },
@@ -36,11 +37,11 @@ export default function FactCard(props) {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography  style={{color:"black"}}gutterBottom variant="h5" component="h2">
             {props.className}
             {props.name}
           </Typography> 
-          <Typography gutterBottom variant="p" component="p">
+          <Typography style={{color:"black"}} gutterBottom variant="p" component="p">
             {props.lifespan}
             
           </Typography> 
@@ -53,14 +54,14 @@ export default function FactCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
+      {/* <CardActions>
+        {/* <Button size="small" color="primary">
           Share
         </Button>
         <Button size="small" color="primary">
           Learn More
-        </Button>
-      </CardActions>
+        </Button> */}
+      {/* </CardActions> */} 
     </Card>
 
         
