@@ -11,22 +11,13 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    minWidth:345,
-    margin:"20px",
-    padding:10
-    
   },
   media: {
     height: 400,
   },
 });
 
-
-
-
-
-export default function FactCard(props) {
-
+export default function FactCard() {
   const classes = useStyles();
 
   return (
@@ -39,14 +30,22 @@ export default function FactCard(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Activist Name 
+            Lizard
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Activist About
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
           </Typography>
         </CardContent>
       </CardActionArea>
-      
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
     </Card>
   );
 }

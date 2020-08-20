@@ -5,8 +5,8 @@ body {
   font-family: sans-serif;
 }
 
-.test {
-  background-color: #c4a349;
+* {
+  color: white;
 }
 
 button {
@@ -16,12 +16,10 @@ button {
   color: white;
   font-size: 1.125rem;
   padding: 0.75rem 1.5rem;
-  transition : 0.3s
 }
 
 button:hover,
 button:active,
 button:focus {
   background-color: #c4a349;
-  color: white;
 }
