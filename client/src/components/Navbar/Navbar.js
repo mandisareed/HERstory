@@ -11,7 +11,7 @@ function Navbar() {
 
   if (isLoggedIn) {
     links.push(
-      <NavLink key="profile" className="nav-item" to="/profile">
+      <NavLink style={{fontFamily : "Didot, serif"}}key="profile" className="nav-item" to="/profile">
         Profile
       </NavLink>
     );
@@ -23,30 +23,30 @@ function Navbar() {
 
     //);
     links.push(
-      <NavLink key="factbook" className="nav-item" to="/factbook">
+      <NavLink  style={{fontFamily : "Didot, serif"}} key="factbook" className="nav-item" to="/factbook">
         Factbook
       </NavLink>
     );
     links.push(
-      <NavLink key="quizpage" className="nav-item" to="/quiz">
+      <NavLink style={{fontFamily : "Didot, serif"}} key="quizpage" className="nav-item" to="/quiz">
         Quiz
       </NavLink>
 
     );
     links.push(
-      <span key="lougout" className="nav-item" onClick={logout}>
+      <span style={{fontFamily : "Didot, serif"}}key="lougout" className="nav-item" onClick={logout}>
         Logout
       </span>
     );
     
   } else {
     links.push(
-      <NavLink key="signup" className="nav-item" to="/signup">
+      <NavLink style={{fontFamily : "Didot, serif"}}key="signup" className="nav-item" to="/signup">
         Sign Up
       </NavLink>
     );
     links.push(
-      <NavLink key="login" className="nav-item" to="/login">
+      <NavLink style={{fontFamily : "Didot, serif"}}key="login" className="nav-item" to="/login">
         Login
       </NavLink>
     );
