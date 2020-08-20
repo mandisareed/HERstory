@@ -1,6 +1,5 @@
 import React from "react";
 import "./Quiz.css";
-import Navbar from "../../components/Navbar";
 import QuizCard from "../../components/Quiz";
 
 
