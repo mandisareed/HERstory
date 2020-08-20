@@ -19,8 +19,6 @@ function App() {
     <AuthProvider>
    
       <Router>
-        
-        <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px" ,color:"white"}}> HERstory</h1>
           
           <ProtectedRoute  to={["/profile","/factbook"]} >
           <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px", margin: "0 auto"}}> HERstory</h1>
