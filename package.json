@@ -21,6 +21,8 @@
   "author": "Travis Thompson, John Desrosiers",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "concurrently": "^5.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
@@ -38,6 +40,7 @@
     "fontsource-roboto": "^3.0.3",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
+    "masonry-layout": "^4.2.2",
     "mongoose": "^5.9.13",
     "morgan": "^1.10.0"
   }
