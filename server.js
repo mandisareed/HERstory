@@ -6,8 +6,8 @@ const morgan = require("morgan");
 const initDb = require("./config/initDb");
 const authRouter = require("./routes/auth");
 const usersRouter = require("./routes/users");
+const notes = require("./routes/notes");
 const errorMiddleware = require("./routes/errorMiddleware");
-const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3001;
 
@@ -27,13 +27,12 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.use(authRouter, usersRouter, errorMiddleware);
+app.use(authRouter, usersRouter, notes, errorMiddleware);
 
 // Send all other requests to react app
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);

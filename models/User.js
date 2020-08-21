@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const bcrypt = require("bcrypt");
 
+
 const UserSchema = new Schema({
   username: {
     type: String,
@@ -26,6 +27,11 @@ const UserSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  notes: [{
+    id: Schema.Types.ObjectId,
+    body: String,
+  }
+  ]
 });
 
 // Execute before each user.save() call
@@ -46,12 +52,7 @@ UserSchema.pre("save", async function () {
 
 UserSchema.methods.verifyPassword = async function (plainTextPassword) {
   return bcrypt.compare(plainTextPassword, this.password);
-  // bcrypt.compare(password, this.password, (err, isMatch) => {
-  //   if (err) {
-  //     return cb(err);
-  //   }
-  //   cb(null, isMatch);
-  // });
+ 
 };
 
 const User = mongoose.model("User", UserSchema);
