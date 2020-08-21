@@ -42,7 +42,7 @@ const useStyles = makeStyles({
     backgroundColor: "#000000",
   }
 });
-function QuizInstructions() {
+function QuizInstructions(props) {
   const instructStyles = useStyles();
 
   return (
@@ -59,7 +59,7 @@ function QuizInstructions() {
           </p>
           <p className={instructStyles.beginPrompt}>Click the button below to begin!</p>
 
-            <Container className={instructStyles.buttonContainer}> <Button className={instructStyles.button} variant="contained" >Begin!</Button></Container> 
+            <Container className={instructStyles.buttonContainer} > <Button className={instructStyles.button} variant="contained" onClick={props.beginQuiz}>Begin!</Button></Container> 
          
           
         </CardContent>

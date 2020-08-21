@@ -37,13 +37,9 @@ function QuizResults() {
             And you're done - CONGRATS!
           </Typography>
           <p className={resultStyles.results}>
-            You answered 4 out of 5 questions correctly.
-            <p className={resultStyles.results}>
-              Add the following to your study list:
-              <p className={resultStyles.results}>
-                Sacagawea, Marie Van Brittan Brown
-              </p>
-            </p>
+            You answered __
+             {/* the state of their score */}
+             out of 5 questions correctly.
           </p>
         </CardContent>
       </Card>
