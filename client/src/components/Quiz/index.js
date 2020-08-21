@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, Component} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 // import CardActions from "@material-ui/core/CardActions";
@@ -26,20 +26,15 @@ const useStyles = makeStyles({
   },
 });
 
-function QuizCard(props) {
-  const quizStyles = useStyles();
+class QuizCard extends Component () {
+  constructor (props) {
+    this.quizStyles = useStyles()
+    this.answerRef = React.createRef();
+  }
+  
 
-// const [quiz, setQuizCard] = useState([]);
-
-//     useEffect(() => {
-//         // ajax on component load the first time
-//         axios.get("https://my-json-server.typicode.com/mandisareed/quizjson/quiz").then((res) => {
-//           console.log(res.data)
-//           setQuizCard(res.data)
-//         });
-//       }, []);
-
-  return (
+render() {
+    return (
       <div>
   
 
@@ -51,15 +46,15 @@ function QuizCard(props) {
           selling what kind of products? */}
           {props.question}
         </Typography>
-        <p className={quizStyles.answers} onClick={props.onAnswer}>
+        <p className={quizStyles.answers} onClick={props.onAnswer} ref={this.answerRef}>
           {/* A) Hair */}
           {props.choiceA}
         </p>
-        <p className={quizStyles.answers} onClick={props.onAnswer}>
+        <p className={quizStyles.answers} onClick={props.onAnswer} ref={this.answerRef}>
           {/* B) Cooking/Baking */}
           {props.choiceB}
         </p>
-        <p className={quizStyles.answers} onClick={props.onAnswer}>
+        <p className={quizStyles.answers} onClick={props.onAnswer} ref={this.answerRef}>
           {/* C) Woodworking */}
           {props.choiceC}
         </p>
@@ -69,6 +64,8 @@ function QuizCard(props) {
     
     </div>
   );
+}
+
 }
 
 export default QuizCard;
