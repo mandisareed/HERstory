@@ -8,20 +8,33 @@ function Home() {
   const { user, logout } = useAuth();
   const history = useHistory();
 
-  const goToEditProfile = () => history.push("/profile");
-
+  const goToEditProfile = () => history.push("/quiz");
+  const goToEditfactbook = () => history.push("/factbook");
   return (
     <div className="Home">
       <div className="Home-header">
-        <img src={logo} className="Home-logo" alt="logo" />
-        <h2>Welcome {user.email}</h2>
-      </div>
-      <p className="Home-intro">
-        <button onClick={goToEditProfile}>Go to Profile</button>
-        <button style={{ marginLeft: "1em" }} onClick={() => logout()}>
+        
+        <h1 style={{fontFamily : "Didot, serif"}}>Welcome to HERstory</h1>
+        <h2 style={{fontFamily : "Didot, serif"}}>Welcome to Herstory ! We created this app to help educate people about the diversity of the 
+          feminine experience & the influences feminine people have made throughout history. 
+          Throughout the pandemic, emerging feminists everywhere have been looking for stories about powerful women who can further
+          inspire them through these challenging times. 
+          
+           </h2>
+          
+           <img alt="" src="https://wp.dailybruin.com/images/2020/01/web.news_.womensmarch.2020.CK_.jpg" style={{maxHeight:"500px", padding:"10px"}}>
+
+           </img>
+           <div></div>
+           <button onClick={goToEditfactbook }>View some visonaries!</button>
+           <button style={{ marginLeft: "1em"}}  onClick={goToEditProfile}>Take a Trivia Quiz!</button>
+        {/* <button style={{ marginLeft: "1em" }} onClick={() => logout()}>
           Logout
-        </button>
-      </p>
+        </button> */}
+
+      </div>
+      
+       
     </div>
   );
 }
