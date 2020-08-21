@@ -1,9 +1,7 @@
-import React, { useState, useContext, useRef, useEffect } from 'react';
-import NotesContext from '../pages/context';
-
+import React, { useState, useRef, useEffect } from "react";
+import API from "../utils/API";
 export default function AddNote() {
-  const { state, dispatch } = useContext(NotesContext);
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   let ref = useRef();
 
@@ -11,32 +9,31 @@ export default function AddNote() {
     ref.current.focus();
   });
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     setValue(event.target.value);
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    if (value.trim() === '') {
-      alert('Cannot add a blank note');
+    if (value.trim() === "") {
+      alert("Cannot add a blank note");
     } else {
-      dispatch({ type: 'ADD_NOTE', payload: value });
-      setValue('');
+      API.addNote(value).then(() => setValue(""));
     }
   };
 
   return (
-    <div className='note-form'>
-      <form onSubmit={handleSubmit} action=''>
-      <textarea
-        style={{color: "black"}}
+    <div className="note-form">
+      <form onSubmit={handleSubmit} action="">
+        <textarea
+          style={{ color: "black" }}
           ref={ref}
           onChange={handleChange}
           value={value}
-          name=''
-          id=''
-          cols='30'
-          rows='10'
+          name=""
+          id=""
+          cols="30"
+          rows="10"
         />
         <button>Add note</button>
       </form>
