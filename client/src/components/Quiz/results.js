@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-function QuizResults() {
+function QuizResults(props) {
   const resultStyles = useStyles();
   // const bull = <span className={resultStyles .bullet}>•</span>;
 
@@ -37,9 +37,7 @@ function QuizResults() {
             And you're done - CONGRATS!
           </Typography>
           <p className={resultStyles.results}>
-            You answered __
-             {/* the state of their score */}
-             out of 5 questions correctly.
+            You answered {props.score} out of 5 questions correctly.
           </p>
         </CardContent>
       </Card>
