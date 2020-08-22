@@ -30,10 +30,10 @@ function Quiz() {
   };
 
   const onAnswer = (event) => {
-    // console.log(event.target.value)
-    //   if (
-    //     the value of the user's choice === quizdata[currentQuestionIndex].rightanswer
-    //   ) setScore(score + 1);
+    console.log(event.target.value)
+      // if (
+      //   the value of the user's choice === quizdata[currentQuestionIndex].rightanswer
+      // ) setScore(score + 1);
 
     setQuestionIndex(currentQuestionIndex + 1);
   };
@@ -41,8 +41,9 @@ function Quiz() {
     
 
 
- 
-    if (currentQuestionIndex < 0) {
+  
+
+  if (currentQuestionIndex < 0) {
     return (
       <div>
         <body className="quiz-background">
@@ -81,8 +82,6 @@ function Quiz() {
       </body>
     </div>
   );
-
-  
 }
 
 export default Quiz;
