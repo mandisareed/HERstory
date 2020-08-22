@@ -33,7 +33,7 @@ function Profile() {
       <h2>Welcome {user.name}</h2>
       <p>Username: {username}</p>
       <p>Email: {email}</p>
-      <Link to="/">Go home</Link>
+      <Link to="/">Go Home</Link>
     
     </Container>
     <NotesContext.Provider value={{ state, dispatch }}>

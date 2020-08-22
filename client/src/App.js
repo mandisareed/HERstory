@@ -20,9 +20,9 @@ function App() {
    
       <Router>
       <ProtectedRoute  to={["/profile","/factbook","/quiz"]} />
-      <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px", margin: "0 auto"}}> HERstory</h1>
+      
           <ProtectedRoute  to={["/profile","/factbook"]} >
-         
+          <h1 style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px", margin: "0 auto"}}> HERstory</h1>
           <Navbar />
           </ProtectedRoute>
           <Switch>
