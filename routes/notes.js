@@ -5,7 +5,7 @@ const { isAuthenticated } = require("../config/auth");
 const router = express.Router();
 
 router.get("/api/notes", isAuthenticated, (req, res) => {
-  db.User.findById(req.params.id)
+  db.User.findAll(req.body)
     .then((data) => {
       if (data) {
         res.json(data);
@@ -28,5 +28,6 @@ router.post("/api/notes", isAuthenticated, (req, res) => {
   )
    .catch((err) => res.status(400).send(err));
 });
+
 
 module.exports = router;

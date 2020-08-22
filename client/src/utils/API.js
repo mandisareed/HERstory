@@ -11,5 +11,7 @@ export default {
   addNote: (note) => {
     return axios.post("/api/notes", {body: note});
   },
-
+  getNotes: (note) => {
+    return axios.get("/api/notes", {body: note});
+  },
 };

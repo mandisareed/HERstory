@@ -1,13 +1,26 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
+import NotesContext from "../pages/context";
 import API from "../utils/API";
 export default function AddNote() {
   const [value, setValue] = useState("");
+const {state, dispatch} = useContext(NotesContext);
 
-  let ref = useRef();
+//let ref = useRef();
 
-  useEffect(() => {
-    ref.current.focus();
-  });
+// useEffect(() => {
+//   ref.current.focus();
+// });
+useEffect(() => {
+  loadNotes()
+}, [])
+
+  function loadNotes() {
+    API.getNotes()
+      .then(res => 
+        setValue(res.data)
+      )
+      .catch(err => console.log(err));
+  };
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -19,6 +32,7 @@ export default function AddNote() {
       alert("Cannot add a blank note");
     } else {
       API.addNote(value).then(() => setValue(""));
+      dispatch({ type: 'ADD_NOTE', payload: value });
     }
   };
 
@@ -27,7 +41,7 @@ export default function AddNote() {
       <form onSubmit={handleSubmit} action="">
         <textarea
           style={{ color: "black" }}
-          ref={ref}
+          //ref={ref}
           onChange={handleChange}
           value={value}
           name=""
