@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const NotesContext = React.createContext({
   currentNote: null,
   notes: [
@@ -10,3 +11,4 @@ const NotesContext = React.createContext({
 })
 
 export default NotesContext;
+
