@@ -5,7 +5,6 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 // import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-// import quiz from "../../quiz.json";
 
 const useStyles = makeStyles({
   root: {
@@ -29,16 +28,6 @@ const useStyles = makeStyles({
 function QuizCard(props) {
   const quizStyles = useStyles();
 
-// const [quiz, setQuizCard] = useState([]);
-
-//     useEffect(() => {
-//         // ajax on component load the first time
-//         axios.get("https://my-json-server.typicode.com/mandisareed/quizjson/quiz").then((res) => {
-//           console.log(res.data)
-//           setQuizCard(res.data)
-//         });
-//       }, []);
-
   return (
       <div>
   
@@ -47,20 +36,21 @@ function QuizCard(props) {
       <CardContent>
 
         <Typography className={quizStyles.question} variant="h5">
-          {/* Sarah Breedlove became the first self-made female millionaire from
-          selling what kind of products? */}
+
           {props.question}
         </Typography>
-        <p className={quizStyles.answers} onClick={props.onAnswer}>
-          {/* A) Hair */}
+        <p className={quizStyles.answers} onClick={props.onAnswer} value={props.choiceA}
+          // (e => alert(e.currentTarget.nodeValue))
+          >
+
           {props.choiceA}
         </p>
-        <p className={quizStyles.answers} onClick={props.onAnswer}>
-          {/* B) Cooking/Baking */}
+        <p className={quizStyles.answers} onClick={props.onAnswer} value={props.choiceB}>
+
           {props.choiceB}
         </p>
-        <p className={quizStyles.answers} onClick={props.onAnswer}>
-          {/* C) Woodworking */}
+        <p className={quizStyles.answers} onClick={props.onAnswer} value={props.choiceC}>
+
           {props.choiceC}
         </p>
       </CardContent>
