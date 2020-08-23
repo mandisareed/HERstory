@@ -28,9 +28,10 @@ function Quiz() {
     console.log(quizdata[currentQuestionIndex].rightAnswer)
     console.log(score);
     if (
-      value.currentTarget.innerHTML === quizdata[currentQuestionIndex].rightAnswer
+      value.currentTarget.innerHTML == quizdata[currentQuestionIndex].rightAnswer
     ) setScore(score + 1);
-    else (setQuestionIndex(currentQuestionIndex + 1))
+    else
+    return setQuestionIndex(currentQuestionIndex + 1)
   };
 
   if (currentQuestionIndex < 0) {
