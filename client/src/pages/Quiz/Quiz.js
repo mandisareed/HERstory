@@ -26,12 +26,13 @@ function Quiz() {
     // console.log(value);
     console.log(value.currentTarget.innerHTML);
     console.log(quizdata[currentQuestionIndex].rightAnswer)
-    console.log(score);
+    
     if (
-      value.currentTarget.innerHTML == quizdata[currentQuestionIndex].rightAnswer
-    ) setScore(score + 1);
-    else
-    return setQuestionIndex(currentQuestionIndex + 1)
+      value.currentTarget.innerHTML === quizdata[currentQuestionIndex].rightAnswer
+    ) setScore(score + 1); 
+    console.log(score);
+  setQuestionIndex(currentQuestionIndex + 1)
+
   };
 
   if (currentQuestionIndex < 0) {
