@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 // import CardActions from "@material-ui/core/CardActions";
@@ -15,13 +15,15 @@ const useStyles = makeStyles({
     color: "#FAFEFC",
     fontFamily: "Courier New",
     fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "center",
   },
   answers: {
-    color: "#FAFEFC",
+    color: "#000000",
     fontFamily: "Courier New",
+    fontWeight: "bold",
     textAlign: "center",
     marginBottom: 3,
+    //add hover feature here
   },
 });
 
@@ -29,34 +31,38 @@ function QuizCard(props) {
   const quizStyles = useStyles();
 
   return (
-      <div>
-  
+    <div>
+      <Card className={quizStyles.root} variant="outlined">
+        <CardContent>
+          <Typography className={quizStyles.question} variant="h5">
+            {props.question}
+          </Typography>
 
-    <Card className={quizStyles.root} variant="outlined">
-      <CardContent>
-
-        <Typography className={quizStyles.question} variant="h5">
-
-          {props.question}
-        </Typography>
-        <p className={quizStyles.answers} onClick={props.onAnswer} value={props.choiceA}
-          // (e => alert(e.currentTarget.nodeValue))
+          <p
+            className={quizStyles.answers}
+            onClick={props.onAnswer}
+            value={props.choiceA}
           >
+            {props.choiceA}
+          </p>
 
-          {props.choiceA}
-        </p>
-        <p className={quizStyles.answers} onClick={props.onAnswer} value={props.choiceB}>
+          <p
+            className={quizStyles.answers}
+            onClick={props.onAnswer}
+            value={props.choiceB}
+          >
+            {props.choiceB}
+          </p>
 
-          {props.choiceB}
-        </p>
-        <p className={quizStyles.answers} onClick={props.onAnswer} value={props.choiceC}>
-
-          {props.choiceC}
-        </p>
-      </CardContent>
-    </Card>
-
-    
+          <p
+            className={quizStyles.answers}
+            onClick={props.onAnswer}
+            value={props.choiceC}
+          >
+            {props.choiceC}
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }
