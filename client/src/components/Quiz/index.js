@@ -23,7 +23,8 @@ const useStyles = makeStyles({
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 3,
-    //add hover feature here
+    role: "button",
+    cursor: "pointer"
   },
 });
 
@@ -42,6 +43,8 @@ function QuizCard(props) {
             className={quizStyles.answers}
             onClick={props.onAnswer}
             value={props.choiceA}
+            role="button"
+            
           >
             {props.choiceA}
           </p>
@@ -50,6 +53,7 @@ function QuizCard(props) {
             className={quizStyles.answers}
             onClick={props.onAnswer}
             value={props.choiceB}
+            role="button"
           >
             {props.choiceB}
           </p>
@@ -58,6 +62,7 @@ function QuizCard(props) {
             className={quizStyles.answers}
             onClick={props.onAnswer}
             value={props.choiceC}
+            role="button"
           >
             {props.choiceC}
           </p>
