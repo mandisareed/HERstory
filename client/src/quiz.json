@@ -1,43 +1,41 @@
 [{
     "id": 1,
     "question": "Sarah Breedlove became the first self-made female millionaire from selling what kind of products?",
-    "a": "Hair",
-    "b": "Baking/Cooking",
-    "c": "Woodworking",
-    "rightAnswer": "Hair"
+    "a": "A) Hair",
+    "b": "B) Baking/Cooking",
+    "c": "C) Woodworking",
+    "rightAnswer": "A) Hair"
 },
 {
     "id": 2,
-    "question": "__________ who was an important figure in the Stonewall Uprising of 1969, co-founded the first organization in the U.S. led by trans women of color.",
-    "a": "Ada Lovelace",
-    "b": "Marsha P. Johnson",
-    "c": "Sarojini Naidu",
-    "rightAnswer": "Marsha P. Johnson"
+    "question": "__________, who was an important figure in the Stonewall Uprising of 1969, co-founded the first organization in the U.S. led by trans women of color.",
+    "a": "A) Ada Lovelace",
+    "b": "B) Marsha P. Johnson",
+    "c": "C) Sarojini Naidu",
+    "rightAnswer": "B) Marsha P. Johnson"
 },
 {
     "id": 3,
     "question": "Junko Tabei faced criticism for challenging gender stereotypes when she became the first woman to:",
-    "a": "Kayak across the Bering Strait",
-    "b": "Climb Mt. Everest",
-    "c": "Competitively race cars",
-    "rightAnswer": "Climb Mt. Everest"
+    "a": "A) Kayak across the Bering Strait",
+    "b": "B) Climb Mt. Everest",
+    "c": "C) Competitively race cars",
+    "rightAnswer": "B) Climb Mt. Everest"
 },
 {
     "id": 4,
     "question": "Often nick-named “Angel of the Battlefield”, this Civil War nurse established the American Red Cross.",
-    "a": "Clara Barton",
-    "b": "Wilma Rudolph",
-    "c": "Christine Jorgensen",
-    "rightAnswer": "Clara Barton"
+    "a": "A) Clara Barton",
+    "b": "B) Wilma Rudolph",
+    "c": "C) Christine Jorgensen",
+    "rightAnswer": "A) Clara Barton"
 },
 {
     "id": 5,
     "question": "Celebrated for the inclusion and celebration of Mexican and indigenous culture in her bold and vibrant paintings, ________ is often touted as a feminist icon and the mother of the selfie.",
-    "a": "Maya Angelou",
-    "b": "Sarojini Naidu",
-    "c": "Frida Kahlo",
-    "rightAnswer": "Frida Kahlo"
+    "a": "A) Maya Angelou",
+    "b": "B) Sarojini Naidu",
+    "c": "C) Frida Kahlo",
+    "rightAnswer": "C) Frida Kahlo"
 }
 ]
-
-
