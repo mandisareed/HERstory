@@ -30,8 +30,8 @@ function Profile() {
     <body className= "profileBackground">
       
       <Container>
-      <h2>Welcome {username.charAt(0).toUpperCase() + username.slice(1)} ! </h2>
-      <h1> What are we learning today?</h1>
+      <h2 style={{fontFamily : "Didot, serif" }}>Welcome {username.charAt(0).toUpperCase() + username.slice(1)} ! </h2>
+      <h1 style={{fontFamily : "Didot, serif" }}> What are we learning today?</h1>
      
       {/* <Link to="/">Go Home</Link> */}
     
