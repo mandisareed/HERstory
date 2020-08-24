@@ -12,7 +12,7 @@ function Navbar() {
   if (isLoggedIn) {
     links.push(
       <NavLink style={{fontFamily : "Didot, serif"}}key="profile" className="nav-item" to="/profile">
-        Profile
+        Notes
       </NavLink>
     );
     // links.push(
