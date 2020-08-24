@@ -36,7 +36,7 @@ function Login() {
     <body className= "loginBackground">
     <div style={loginStyle}>
     <h1 className= "loginHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
-      <h1>Login</h1>
+      <h1 style={{textAlign : "center"}}>Log In</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup 
         style={{backgroundColor: "#293713"}} 
@@ -67,7 +67,7 @@ function Login() {
         }}
         to="/signup"
       >
-        Go to Signup
+        Go to Sign Up
       </Link>
     </div>
     </body>
