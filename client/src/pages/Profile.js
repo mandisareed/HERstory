@@ -35,7 +35,7 @@ function Profile() {
       <h2 style={{fontFamily : "Didot, serif", marginTop: "19px", marginBottom: "10px" }}>Welcome {username.charAt(0).toUpperCase() + username.slice(1)}! </h2>
       </div>
       <div className="container">
-      <h1 style={{fontFamily : "Didot, serif", marginTop: "10px" }}> What are we learning today?</h1>
+      <h1 style={{fontFamily : "Didot, serif", marginTop: "10px", fontSize: "35px" }}> What are we learning today?</h1>
      
       {/* <Link to="/">Go Home</Link> */}
     
