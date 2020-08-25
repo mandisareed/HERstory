@@ -1,6 +1,7 @@
 .loginBackground {
     background-color:#BB6B1E;
     min-height: 100vh;
+    font-family: Didot;
   }
   .loginHeader {
     background-color:#BB6B1E;
@@ -8,4 +9,5 @@
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color:white;
     text-align: center;
+    
   }

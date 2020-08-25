@@ -50,7 +50,7 @@ function Signup() {
     <body className= "signupBackground">
     <div style={signupStyles} className="Signup">
     <h1 className= "signupHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
-      <h1 style={{fontFamily : "Courier New, monospace", textAlign: "center"}}>Sign Up</h1>
+      <h1 style={{fontFamily : "Didot", textAlign: "center"}}>Sign Up</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup
         style={{backgroundColor: "#293713"}}
@@ -85,6 +85,7 @@ function Signup() {
         style={{
           marginTop: "1.5rem",
           textAlign: "center",
+          fontFamily: "Didot"
         }}
         to="/login"
       >
