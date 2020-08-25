@@ -4,7 +4,7 @@ import API from "../utils/API";
 export default function AddNote() {
   const [value, setValue] = useState("");
 const {state, dispatch} = useContext(NotesContext);
-
+const [notes, setNotes] = useState([])
 //let ref = useRef();
 
 // useEffect(() => {
