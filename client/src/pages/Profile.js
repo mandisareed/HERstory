@@ -29,13 +29,15 @@ function Profile() {
     
     <body className= "profileBackground">
       
-      <Container>
-      <h2 style={{fontFamily : "Didot, serif" }}>Welcome {username.charAt(0).toUpperCase() + username.slice(1)} ! </h2>
-      <h1 style={{fontFamily : "Didot, serif" }}> What are we learning today?</h1>
+      <div className="container">
+      <h2 style={{fontFamily : "Didot, serif", marginTop: "19px", marginBottom: "10px" }}>Welcome {username.charAt(0).toUpperCase() + username.slice(1)}! </h2>
+      </div>
+      <div className="container">
+      <h1 style={{fontFamily : "Didot, serif", marginTop: "10px" }}> What are we learning today?</h1>
      
       {/* <Link to="/">Go Home</Link> */}
     
-    </Container>
+    </div>
     <NotesContext.Provider value={{ state, dispatch }}>
 
       {state.currentNote === null ? (

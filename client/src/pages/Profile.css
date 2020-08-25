@@ -32,6 +32,8 @@
   }
   
   .container {
+    /* background: #fafefc;
+    color: "#293713"; */
     display: flex;
     justify-content: center;
   }
