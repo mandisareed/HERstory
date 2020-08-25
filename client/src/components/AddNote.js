@@ -29,9 +29,13 @@ const useStyles = makeStyles({
 export default function AddNote() {
   const [value, setValue] = useState("");
 const {state, dispatch} = useContext(NotesContext);
+<<<<<<< HEAD
 
 const newNoteStyles = useStyles();
 
+=======
+const [notes, setNotes] = useState([])
+>>>>>>> ded22b1b3f6f1d4301512018450dd687b9838276
 //let ref = useRef();
 
 // useEffect(() => {

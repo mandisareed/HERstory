@@ -51,7 +51,7 @@ import Grid from '@material-ui/core/Grid';
   
 
   return (
-    <div>
+    <div >
    <h1 style={{color:"white" , textAlign:"center" ,fontFamily : "Didot, serif"}}>Factbook</h1>
    <Grid   container spacing={3}>
      

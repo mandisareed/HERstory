@@ -8,10 +8,10 @@ export default {
   signUpUser: (username, email, password) => {
     return axios.post("api/signup", {username: username, email: email, password: password});
   },
-  addNote: (note) => {
-    return axios.post("/api/notes", {body: note});
+  addNote: (id) => {
+    return axios.post("/api/notes/" + id);
   },
-  getNotes: (note) => {
-    return axios.get("/api/notes", {body: note});
+  getNotes: (id) => {
+    return axios.get("/api/notes/" +id );
   },
 };

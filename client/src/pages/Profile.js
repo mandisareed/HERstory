@@ -16,6 +16,7 @@ function Profile() {
   const [email, setEmail] = useState("");
   const { user } = useAuth();
   const initialState = useContext(NotesContext);
+  
   const [state, dispatch] = useReducer(notesReducer, initialState);
 
   useEffect(() => {

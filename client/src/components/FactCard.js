@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     maxWidth: 345,
     minWidth:345,
     
-  marginLeft:"65px",
+  // marginLeft:"65px",
   
   
     
@@ -28,6 +28,9 @@ export default function FactCard(props) {
   const classes = useStyles();
 
   return ( 
+    <div style={{
+      flexGrow: 1,
+    }}>
   <Grid item xs={12} md={4}>
     <Card className={classes.root}>
       <CardActionArea>
@@ -68,7 +71,7 @@ export default function FactCard(props) {
        
         
     </Grid>
-    
+    </div>
   );
 }
 
