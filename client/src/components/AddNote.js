@@ -68,7 +68,7 @@ useEffect(() => {
     <div className="note-form">
       <form onSubmit={handleSubmit} action="">
         <textarea
-          style={{ color: "black" }}
+          style={{ color: "black", fontFamily: "Didot" }}
           //ref={ref}
           onChange={handleChange}
           value={value}
