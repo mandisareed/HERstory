@@ -9,6 +9,7 @@ import NoteList from '../components/NoteList';
 import EditNote from '../components/EditNote';
 import NotesContext from '../pages/context';
 import notesReducer from '../pages/reducer';
+import Note from "../components/Note";
 
 function Profile() {
   const [username, setUsername] = useState("");
@@ -49,6 +50,8 @@ function Profile() {
         <EditNote />
       )}
     </NotesContext.Provider>
+
+
   
     </body>
   );
