@@ -6,6 +6,7 @@ const router = express.Router();
 
 router.get("/api/notes", isAuthenticated, (req, res) => {
   db.User.findAll(req.body)
+  console.log(db.User.findAll(req.body))
     .then((data) => {
       if (data) {
         res.json(data);

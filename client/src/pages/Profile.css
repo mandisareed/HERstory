@@ -32,6 +32,8 @@
   }
   
   .container {
+    /* background: #fafefc;
+    color: "#293713"; */
     display: flex;
     justify-content: center;
   }
@@ -47,28 +49,32 @@
     margin: 10px;
     padding: 13px;
     border-radius: 5px;
-    border: solid #c4a349 1px;
+    border: solid white 1px;
+    background: #c4a349;
+    color: white;
   }
   
   .btn-container {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: center;
   }
   
   .btn-container button {
     margin-right: 10px;
+    
   }
   
   .edit {
-    color: white;
-    background: #007bff;
+    color: black;
+    background: white;
     padding: 5px 10px;
     border: none;
   }
   
   .delete {
     color: white;
-    background: #dc3545;
+    background: black;
     padding: 5px 10px;
     border: none;
   }
