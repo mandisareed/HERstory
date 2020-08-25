@@ -50,13 +50,13 @@ function Signup() {
     <body className= "signupBackground">
     <div style={signupStyles} className="Signup">
     <h1 className= "signupHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
-      <h1 style={{fontFamily : "Courier New, monospace"}}>Signup</h1>
+      <h1 style={{fontFamily : "Courier New, monospace", textAlign: "center"}}>Sign Up</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup
         style={{backgroundColor: "#293713"}}
           id="username"
           //labelText="Username"
-          placeholder="username"
+          placeholder="Username"
           name="username"
           type="text"
           onChange={handleChange}
@@ -88,7 +88,7 @@ function Signup() {
         }}
         to="/login"
       >
-        Go to Login
+        Go to Log In
       </Link>
       <br></br>
     </div>
