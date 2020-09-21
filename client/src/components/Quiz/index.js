@@ -13,13 +13,13 @@ const useStyles = makeStyles({
   },
   question: {
     color: "#FAFEFC",
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     fontWeight: "bold",
     textAlign: "center",
   },
   answers: {
     color: "#000000",
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 3,

@@ -13,31 +13,31 @@ const useStyles = makeStyles({
   },
   instructionsHeader: {
     color: "#FAFEFC",
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     fontWeight: "bold",
     textAlign: "center",
   },
   instructions: {
     color: "#FAFEFC",
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     textAlign: "center",
     marginBottom: 3,
   },
   beginPrompt: {
     color: "#FAFEFC",
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     fontWeight: "bold",
     textAlign: "center",
   },
   buttonContainer: {
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     fontWeight: "bold",
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center"
   },
   button: {
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     fontWeight: "bold",
     backgroundColor: "#000000",
   }

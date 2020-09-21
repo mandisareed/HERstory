@@ -13,13 +13,13 @@ const useStyles = makeStyles({
   },
   congrats: {
     color: "#000000",
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     fontWeight: "bold",
     textAlign: "center",
   },
   results: {
     color: "#000000",
-    fontFamily: "Courier New",
+    fontFamily: 'Montserrat',
     textAlign: "center",
     marginBottom: 3,
   },
