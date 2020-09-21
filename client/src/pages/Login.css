@@ -1,13 +1,14 @@
 .loginBackground {
-    background-color:#BB6B1E;
+    background-color:#fff;
     min-height: 100vh;
-    font-family: Didot;
+    font-family: Montserrat;
   }
   .loginHeader {
-    background-color:#BB6B1E;
+    background-color:#fff;
+    color: black;
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color:white;
+    color: #000000;
     text-align: center;
     
   }

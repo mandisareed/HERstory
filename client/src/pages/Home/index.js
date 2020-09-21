@@ -15,7 +15,7 @@ function Home() {
       <div className="Home-header">
         
         <h1 style={{fontFamily : "Montserrat, serif"}}>Welcome to HERstory</h1>
-        <h2 style={{fontFamily : "Montserrat, serif"}}>Welcome to Herstory ! We created this app to help educate people about the diversity of the 
+        <h2 style={{fontFamily : "Montserrat, serif"}}>Welcome to Herstory! We created this app to help educate people about the diversity of the 
           feminine experience & the influences feminine people have made throughout history. 
           Throughout the pandemic, emerging feminists everywhere have been looking for stories about powerful women who can further
           inspire them through these challenging times. 

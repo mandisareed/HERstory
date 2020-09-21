@@ -35,11 +35,11 @@ function Login() {
   return (
     <body className= "loginBackground">
     <div style={loginStyle}>
-    <h1 className= "loginHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
-      <h1 style={{textAlign : "center"}}>Log In</h1>
+    <h1 className= "loginHeader" style={{textAlign : "center", fontFamily : "Arvo", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
+      <h1 style={{textAlign : "center", color: "black"}}>Log In</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup 
-        style={{backgroundColor: "#293713"}} 
+        style={{backgroundColor: "#C4A349", fontFamily: "Montserrat", color: "black"}} 
           id="email"
           placeholder="Email"
           // labelText="Email"
@@ -49,7 +49,7 @@ function Login() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <InputGroup
-        style={{backgroundColor: "#293713"}}
+        style={{backgroundColor: "#C4A349", fontFamily: "Montserrat", color: "black"}}
           id="password"
           placeholder="Password"
           // labelText="Password"
@@ -58,10 +58,12 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button style= {{ backgroundColor: "black", fontFamily: "Montserrat"}}
+      type="submit">Submit</button>
       </Form>
       <Link
         style={{
+          color: "black",
           marginTop: "1.5rem",
           textAlign: "center",
         }}
