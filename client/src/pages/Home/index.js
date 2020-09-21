@@ -14,8 +14,8 @@ function Home() {
     <div className="Home">
       <div className="Home-header">
         
-        <h1 style={{fontFamily : "Didot, serif"}}>Welcome to HERstory</h1>
-        <h2 style={{fontFamily : "Didot, serif"}}>Welcome to Herstory ! We created this app to help educate people about the diversity of the 
+        <h1 style={{fontFamily : "Montserrat, serif"}}>Welcome to HERstory</h1>
+        <h2 style={{fontFamily : "Montserrat, serif"}}>Welcome to Herstory ! We created this app to help educate people about the diversity of the 
           feminine experience & the influences feminine people have made throughout history. 
           Throughout the pandemic, emerging feminists everywhere have been looking for stories about powerful women who can further
           inspire them through these challenging times. 
@@ -26,8 +26,8 @@ function Home() {
 
            </img>
            <div></div>
-           <button onClick={goToEditfactbook } style={{ fontFamily: "Courier New", fontWeight: "bold"}}>View some visonaries</button>
-           <button style={{ marginLeft: "1em", fontFamily: "Courier New", fontWeight: "bold"}}  onClick={goToEditProfile}>Take a Trivia Quiz</button>
+           <button onClick={goToEditfactbook } style={{ fontFamily: "Montserrat", fontWeight: "bold"}}>View some visonaries</button>
+           <button style={{ marginLeft: "1em", fontFamily: "Montserrat", fontWeight: "bold"}}  onClick={goToEditProfile}>Take a Trivia Quiz</button>
         {/* <button style={{ marginLeft: "1em" }} onClick={() => logout()}>
           Logout
         </button> */}
