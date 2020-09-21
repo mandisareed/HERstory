@@ -52,7 +52,7 @@ import Grid from '@material-ui/core/Grid';
 
   return (
     <div >
-   <h1 style={{color:"white" , textAlign:"center" ,fontFamily : "Didot, serif"}}>Factbook</h1>
+   <h1 style={{color:"white" , textAlign:"center" ,fontFamily : "Montserrat, serif"}}>Factbook</h1>
    <Grid   container spacing={3}>
      
         {persons.map((user) => (

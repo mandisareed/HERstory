@@ -16,9 +16,6 @@ const useStyles = makeStyles({
     marginRight: "10px"
     
   // marginLeft:"65px",
-  
-  
-    
   },
   media: {
     height: 400,
@@ -38,22 +35,22 @@ export default function FactCard(props) {
         <CardMedia
           className={classes.media}
           image={props.src}
-          title="Contemplative Reptile"
+          // title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography  style={{color:"black"}}gutterBottom variant="h5" component="h2">
+          <Typography  style={{color:"black", fontFamily: "Montserrat"}} gutterBottom variant="h5" component="h2">
             {props.className}
             {props.name}
           </Typography> 
-          <Typography style={{color:"black"}} gutterBottom variant="p" component="p">
+          <Typography style={{color:"black", fontFamily: "Montserrat"}} gutterBottom variant="p" component="p">
             {props.lifespan}
             
           </Typography> 
-          <Typography gutterBottom variant="p" component="p">
+          <Typography style={{fontFamily: "Montserrat"}} gutterBottom variant="p" component="p">
             "{props.quote}"
             
           </Typography> 
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography style={{fontFamily: "Montserrat"}} variant="body2" color="textSecondary" component="p">
             {props.about}
           </Typography>
         </CardContent>
