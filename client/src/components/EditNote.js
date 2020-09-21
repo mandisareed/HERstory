@@ -29,7 +29,7 @@ export default function EditNote() {
     <div className='note-form'>
       <form onSubmit={handleSubmit} action=''>
         <textarea
-        style={{color: "black"}}
+        style={{color: "black", fontFamily: "Montserrat"}}
           ref={ref}
           onChange={handleChange}
           value={value}
@@ -38,8 +38,8 @@ export default function EditNote() {
           cols='30'
           rows='10'
         />
-        <div style={{ textAlign: 'right' }}>
-          <button>Update note</button>
+        <div style={{ textAlign: 'right', fontFamily: "Montserrat" }}>
+          <button style={{fontFamily: "Montserrat" }}>Update note</button>
         </div>
       </form>
     </div>

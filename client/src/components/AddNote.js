@@ -11,14 +11,14 @@ const useStyles = makeStyles({
   //   backgroundColor: "#C4A349"
   // },
   buttonContainer: {
-    fontFamily: "Courier New",
+    fontFamily: "Montserrat",
     fontWeight: "bold",
     textAlign: "center",
     justifyContent: "center",
     alignItems: "center"
   },
   button: {
-    fontFamily: "Courier New",
+    fontFamily: "Montserrat",
     fontWeight: "bold",
     backgroundColor: "#000000",
   }
@@ -68,7 +68,7 @@ useEffect(() => {
     <div className="note-form">
       <form onSubmit={handleSubmit} action="">
         <textarea
-          style={{ color: "black", fontFamily: "Didot" }}
+          style={{ color: "black", fontFamily: "Montserrat" }}
           //ref={ref}
           onChange={handleChange}
           value={value}

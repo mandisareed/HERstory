@@ -9,13 +9,13 @@
     box-sizing: border-box;
   }
   body {
-    font-family: "Didot";
+    font-family: "Montserrat";
   }
   .note-form {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    font-family: "Didot";
+    font-family: "Montserrat";
   }
   
   .note-form input {
@@ -38,7 +38,7 @@
     color: "#293713"; */
     display: flex;
     justify-content: center;
-    font-family: "Didot";
+    font-family: "Montserrat";
   }
   
   .notes-container {
@@ -55,7 +55,7 @@
     border: solid white 1px;
     background: #c4a349;
     color: white;
-    font-family: "Didot";
+    font-family: "Montserrat";
   }
   
   .btn-container {
@@ -75,7 +75,7 @@
     padding: 5px 10px;
     border: none;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Montserrat", serif;
   }
   
   .delete {
@@ -84,5 +84,5 @@
     padding: 5px 10px;
     border: none;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Montserrat", serif;
   }

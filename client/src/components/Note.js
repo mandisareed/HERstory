@@ -5,7 +5,7 @@ export default function Note({ note }) {
 
   return (
     <div className='note'>
-      <p style={{fontFamily : "Didot"}}>{note.text}</p>
+      <p style={{fontFamily : "Montserrat"}}>{note.text}</p>
       <div className='btn-container'>
         <button
           onClick={() => dispatch({ type: 'SET_CURRENT_NOTE', payload: note })}
