@@ -1,9 +1,9 @@
 .signupBackground {
-    background-color:#BB6B1E;
+    background-color:#fff;
     min-height: 100vh;
   }
   .signupHeader {
-    background-color:#BB6B1E;
+    background-color:#fff;
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color:white;

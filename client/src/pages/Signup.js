@@ -49,11 +49,11 @@ function Signup() {
   return (
     <body className= "signupBackground">
     <div style={signupStyles} className="Signup">
-    <h1 className= "signupHeader" style={{textAlign : "center", fontFamily : "Didot, serif", fontWeight: "800", fontSize:"68px"}}> HERstory</h1>
-      <h1 style={{fontFamily : "Didot", textAlign: "center"}}>Sign Up</h1>
+    <h1 className= "signupHeader" style={{textAlign : "center", fontFamily : "Arvo", fontWeight: "800", fontSize:"68px", color: "black"}}> HERstory</h1>
+      <h1 style={{fontFamily : "Arvo", textAlign: "center", color: "black"}}>Sign Up</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup
-        style={{backgroundColor: "#293713"}}
+        style={{fontFamily : "Arvo",backgroundColor: "#C4A349"}}
           id="username"
           //labelText="Username"
           placeholder="Username"
@@ -62,7 +62,7 @@ function Signup() {
           onChange={handleChange}
         />
         <InputGroup
-        style={{backgroundColor: "#293713"}}
+        style={{fontFamily : "Arvo", backgroundColor: "#C4A349"}}
           id="email"
           //labelText="Email"
           placeholder="Email"
@@ -71,7 +71,7 @@ function Signup() {
           onChange={handleChange}
         />
         <InputGroup
-        style={{backgroundColor: "#293713"}}
+        style={{fontFamily : "Arvo", backgroundColor: "#C4A349"}}
           id="pwd"
           //labelText="Password"
           placeholder="Password"
@@ -79,13 +79,14 @@ function Signup() {
           type="password"
           onChange={handleChange}
         />
-        <button type="submit">Submit</button>
+        <button style={{fontFamily : "Arvo", backgroundColor: "black"}} type="submit">Submit</button>
       </Form>
       <Link
         style={{
           marginTop: "1.5rem",
           textAlign: "center",
-          fontFamily: "Didot"
+          fontFamily: "Arvo",
+          color: "black"
         }}
         to="/login"
       >
