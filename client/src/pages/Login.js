@@ -39,7 +39,7 @@ function Login() {
       <h1 style={{textAlign : "center", color: "black"}}>Log In</h1>
       <Form onSubmit={handleFormSubmit}>
         <InputGroup 
-        style={{backgroundColor: "#C4A349", fontFamily: "Montserrat", color: "black"}} 
+        style={{backgroundColor: "#C4A349", fontFamily: "Arvo", color: "black"}} 
           id="email"
           placeholder="Email"
           // labelText="Email"
@@ -49,7 +49,7 @@ function Login() {
           onChange={(e) => setEmail(e.target.value)}
         />
         <InputGroup
-        style={{backgroundColor: "#C4A349", fontFamily: "Montserrat", color: "black"}}
+        style={{backgroundColor: "#C4A349", fontFamily: "Arvo", color: "black"}}
           id="password"
           placeholder="Password"
           // labelText="Password"
@@ -58,7 +58,7 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button style= {{ backgroundColor: "black", fontFamily: "Montserrat"}}
+        <button style= {{ backgroundColor: "black", fontFamily: "Arvo"}}
       type="submit">Submit</button>
       </Form>
       <Link
