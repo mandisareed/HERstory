@@ -1,9 +1,10 @@
 import React, { useState, useContext, useRef, useEffect } from 'react';
 import NotesContext from '../pages/context';
+import API from "../utils/API";
 
 export default function EditNote() {
   const { state, dispatch } = useContext(NotesContext);
-  const [value, setValue] = useState(state.currentNote.text);
+  const [value, setValue] = useState(state.currentNote.body);
 
   let ref = useRef();
 
@@ -20,7 +21,8 @@ export default function EditNote() {
     if (value.trim() === '') {
       alert('Cannot add a blank note');
     } else {
-      dispatch({ type: 'UPDATE_NOTE', payload: value });
+      API.updateNote({ ...state.currentNote, body: value }).then(() => setValue(""));
+      dispatch({ type: 'UPDATE_NOTE', payload: { ...state.currentNote, body: value } });
       setValue('');
     }
   };

@@ -14,14 +14,12 @@ function Home() {
     <div className="Home">
       <div className="Home-header">
         
-        <h1 style={{fontFamily : "Montserrat, serif"}}>Welcome to HERstory</h1>
-        <h2 style={{fontFamily : "Montserrat, serif"}}>Welcome to Herstory! We created this app to help educate people about the diversity of the 
+        <h1 style={{fontFamily : "Montserrat, serif", fontWeight: "700"}}>Welcome to HERstory!</h1>
+          
+          <h3 style={{fontFamily: "Montserrat, serif"}}>This app was created to help educate people about the diversity of the 
           feminine experience & the influences feminine people have made throughout history. 
           Throughout the pandemic, emerging feminists everywhere have been looking for stories about powerful women who can further
-          inspire them through these challenging times. 
-          
-           </h2>
-          
+          inspire them through these challenging times. </h3> 
            <img alt="" src="https://wp.dailybruin.com/images/2020/01/web.news_.womensmarch.2020.CK_.jpg" style={{maxHeight:"500px", padding:"10px"}}>
 
            </img>

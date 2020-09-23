@@ -14,4 +14,10 @@ export default {
   getNotes: (note) => {
     return axios.get("/api/notes", {body: note});
   },
+  updateNote: (note) => {
+    return axios.put("/api/notes", {body: note})
+  },
+  deleteNote: (noteId) => {
+    return axios.delete("/api/notes/" + noteId)
+  }
 };

@@ -45,8 +45,8 @@ useEffect(() => {
   function loadNotes() {
     API.getNotes()
       .then(res => 
-        setValue(res.data)
-      )
+        dispatch({type: 'SET_NOTES', payload: res.data})
+      ) 
       .catch(err => console.log(err));
   };
 

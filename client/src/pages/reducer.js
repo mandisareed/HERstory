@@ -14,8 +14,10 @@ export default function reducer(state, action) {
         notes: addedNotes
       };
     case 'DELETE_NOTE':
+      console.log(action.payload)
+      console.log(state.notes)
       const deletedNotes = state.notes.filter(
-        note => note.id !== action.payload
+        note => note._id !== action.payload
       );
 
       return {
@@ -28,25 +30,21 @@ export default function reducer(state, action) {
         currentNote: action.payload
       };
     case 'UPDATE_NOTE':
-      const updatedNote = {
-        ...state.currentNote,
-        text: action.payload
-      };
+      const updatedNoteId = action.payload._id
 
-      const updatedNotesIndex = state.notes.findIndex(
-        note => note.id === state.currentNote.id
-      );
-
-      const updatedNotes = [
-        ...state.notes.slice(0, updatedNotesIndex),
-        updatedNote,
-        ...state.notes.slice(updatedNotesIndex + 1)
-      ];
+      const newNotes = state.notes.map(note => {
+        return note._id == updatedNoteId ? action.payload : note
+      })
 
       return {
         currentNote: null,
-        notes: updatedNotes
+        notes: newNotes
       };
+    case 'SET_NOTES':
+      return {
+        ...state,
+        notes: action.payload
+      }
     default:
       return state;
   }
