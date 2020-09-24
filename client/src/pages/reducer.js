@@ -4,7 +4,7 @@ export default function reducer(state, action) {
     case 'ADD_NOTE':
       const newNote = {
         id: uuid.v4(),
-        text: action.payload
+        body: action.payload
       };
 
       const addedNotes = [...state.notes, newNote];
