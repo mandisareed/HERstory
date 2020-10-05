@@ -36,6 +36,8 @@ function Factbook() {
         Factbook
       </h1>
       <Grid container spacing={12}>
+        {/* spacing the grid out to 12 eliminated the horizontal scroll,
+        since im telling the container to take up all 11 columns */}
         {persons.map((user) => (
           <FactCard
             quote={user.quote}
