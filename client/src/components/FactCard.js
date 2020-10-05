@@ -11,9 +11,10 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
-    minWidth:345,
-    marginRight: "10px"
+    maxWidth: 300,
+    minWidth:300,
+    // marginRight: "10px"
+    justifyContent: "center"
     
   // marginLeft:"65px",
   },
@@ -29,13 +30,12 @@ export default function FactCard(props) {
     <div style={{
       flexGrow: 1,
     }}>
-  <Grid item xs={12} md={4}>
+  <Grid item xs={12} md={3}>
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={props.src}
-          // title="Contemplative Reptile"
         />
         <CardContent>
           <Typography  style={{color:"black", fontFamily: "Montserrat"}} gutterBottom variant="h5" component="h2">
@@ -55,14 +55,6 @@ export default function FactCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* <CardActions>
-        {/* <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button> */}
-      {/* </CardActions> */} 
     </Card>
 
         
