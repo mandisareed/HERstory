@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-// Our Components
+// Components
 import { AuthProvider } from "./utils/auth";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Login";
@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Factbook from "./pages/Factbook";
 import Quiz from "./pages/Quiz/Quiz";
+// import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -50,6 +51,8 @@ function App() {
           </Switch>
        
       </Router>
+
+      {/* <Footer/> */}
     </AuthProvider>
   );
 }
