@@ -24,11 +24,9 @@ function Home() {
 
            </img>
            <div></div>
-           <button onClick={goToEditfactbook } style={{ fontFamily: "Montserrat", fontWeight: "bold"}}>View some visonaries</button>
-           <button style={{ marginLeft: "1em", fontFamily: "Montserrat", fontWeight: "bold"}}  onClick={goToEditProfile}>Take a Trivia Quiz</button>
-        {/* <button style={{ marginLeft: "1em" }} onClick={() => logout()}>
-          Logout
-        </button> */}
+           <button onClick={goToEditfactbook } style={{marginBottom: "1em", fontFamily: "Montserrat", fontWeight: "bold"}}>View some visonaries</button>
+           <button style={{marginBottom: "1em", marginLeft: "1em", fontFamily: "Montserrat", fontWeight: "bold"}}  onClick={goToEditProfile}>Take a Trivia Quiz</button>
+       
 
       </div>
       
